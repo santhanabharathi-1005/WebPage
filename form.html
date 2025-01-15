@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <style>
+        form,label,input{
+            border: 1px solid black;
+        }
+    </style> -->
+</head>
+<body>
+    <!-- form-collecting info from user through electronic way will send data to web server
+     attributes:action,method
+     Action:where to sent data Method:deals about security(how to sent data)
+     for is attr of label.to label something
+     when click submit it sent data to somewhere-default behaviour of form
+     Name attri-> idetify grouping
+     when user trying to perform event that time use name attribute-->
+   
+   <fieldset>
+    <legend><h1>Student details</h1></legend>
+     <form action="#" autocomplete="on" validate>
+        <label for="FName">FirstName :</label>
+        <input type="text" id="FName" name="userFirstName" placeholder="Enter FirstName"
+        minlength="5" maxlength="15"
+        autofocus>
+        <br><br>
+        <label for="lname">LastName :</label>
+        <input type="text" name="LastName" id="lname" required>
+        <br><br>
+        <label for="age"> Age :</label>
+        <input type="number" name="LastName" id="age" min="18" max="25">
+        <br><br>
+        <label for="user_female_gen">Gender :</label>
+        <input type="radio" name="gender" id="user_male_gen" value="male">Male
+        <input type="radio" name="gender" id="user_female_gen" value="female">Female
+        <input type="radio" name="gender" id="user_others_gen" value="others">Others
+        <br><br>
+
+        <label for="email">Email :</label>
+        <input type="email" name="useremail" id="email">
+        <br><br>
+        
+        <label for="qualification">Qualification :</label>
+        <input type="checkbox" name="user_qual_1" id="qualification_be" value="B.E.">B.E.
+        <input type="checkbox" name="user_qual_2" id="qualification_btech" value="M.E">M.E.
+        <input type="checkbox" name="user_qual_3" id="qualification_bsc" value="Bsc">Bsc
+        <input type="checkbox" name="user_qual_4" id="qualification_msc" value="Msc">Msc
+        <br><br>
+       
+        <label for="user_mobile">Phone No :</label>
+       <input type="tel" name="usercontact" id="user_mobile" pattern="[0-9]{10}">
+       <br><br>
+
+       <label for="user_address">Address</label><br>
+       <textarea name="user_addr" id="user_address" cols="20" rows="10"></textarea>
+       <br><br>
+
+       <label for="user_choose_course">Choose Course :</label>
+       <select name="" id="">
+        <option value="null">Select value</option>
+       <option value="html">HTML</option>
+       <option value="css">CSS</option>
+       <option value="js">JavaScript</option>
+
+       <!-- to set default in dropdown use selected attribute -->
+    </select>
+     <br><br>
+     <input type="submit" name="" id=""> 
+     <input type="reset" name="" id="">
+    </form>
+
+    <!-- Validation attribute
+    placeholder
+    disabled
+    enabled readonly autocomplete step min max minlen maxlen validate novalidate  -->
+</fieldset>
+</body>
+</html>
